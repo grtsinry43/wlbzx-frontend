@@ -38,7 +38,7 @@ const simpleAns = ref(JSON.stringify({
 }));
 
 const clickRegHandle = async function () {
-  const resp = await $fetch("/api/api/user", {
+  const resp = await $fetch("/api/user", {
     method: "POST",
     headers: {
       join: "yunlugu2024",
@@ -51,7 +51,7 @@ const clickRegHandle = async function () {
 
 const clickVerifyHandle = async function () {
   console.log(uuidInput.value)
-  const resp = await $fetch("/api/api/user/verify-reg", {
+  const resp = await $fetch("/api/user/verify-reg", {
     params: {
       uuid: uuidInput.value
     }

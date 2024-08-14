@@ -48,7 +48,7 @@ const generateTokenHandle = async function () {
     });
     return;
   }
-  const resp = await $fetch("/api/api/auth/get_token", {
+  const resp = await $fetch("/api/auth/get_token", {
     method: "POST",
     params: {
       key: key.value,
@@ -60,7 +60,7 @@ const generateTokenHandle = async function () {
 
 const clickVerifyHandle = async function () {
   console.log(keyInput.value, tokenInput.value)
-  const resp = await $fetch("/api/api/auth/verify_token", {
+  const resp = await $fetch("/api/auth/verify_token", {
     method: "POST",
     headers: {
       'type': 'web'

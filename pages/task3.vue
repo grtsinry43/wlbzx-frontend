@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: '任务三，最后一个咯｜grtsinry43的招新小网站(｡･ω･｡)ﾉ♡',
+})
 import {ref} from 'vue';
 import {useRoute} from 'vue-router';
 
@@ -111,7 +114,7 @@ const route = useRoute();
     </div>
     <p class="title font-bold">第三部分</p>
     <div class="desc">
-      <p>我准备了一个小接口，<span class="text-114514">悄悄</span>访问一下就能得到以下数据</p>
+      <p>我准备了一个小接口，<b>https://wlbzx.grtsinry43.com/api/time</b><span class="text-114514">悄悄</span>访问一下就能得到以下数据</p>
       <UTextarea v-model="simpleResp" placeholder="这个是拿来看的 为什么要把它们都删了😡"
                  :rows="8" class="m-2 code-container"
       ></UTextarea>
@@ -120,6 +123,8 @@ const route = useRoute();
       <UTextarea v-model="simpleAns" placeholder="这个是拿来看的 为什么要把它们都删了😡"
                  :rows="8" class="m-2 code-container-2"
       ></UTextarea>
+      最后，你也可以模仿这个接口，将其部署在2333端口上
+      附加：你可以让它返回其他形式吗？比如时间戳
     </div>
   </UCard>
 </template>

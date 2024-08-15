@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: '任务二，就快完成啦｜grtsinry43的招新小网站(｡･ω･｡)ﾉ♡',
+})
 import {ref} from 'vue';
 import {useRoute} from 'vue-router';
 
@@ -27,7 +30,7 @@ const token = ref("");
 const tokenInput = ref("");
 
 const generateKeyHandle = async function () {
-  const resp = await $fetch("/api/api/auth/gen_key");
+  const resp = await $fetch("/api/auth/gen_key");
   genKeyResp.value = JSON.stringify(resp);
 };
 

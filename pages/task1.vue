@@ -32,7 +32,9 @@ const clickRegHandle = async function () {
   console.log(resp)
   regResp.value = JSON.stringify(resp);
 };
-
+useHead({
+  title: '任务一｜grtsinry43的招新小网站(｡･ω･｡)ﾉ♡',
+})
 const clickVerifyHandle = async function () {
   console.log(uuidInput.value)
   const resp = await $fetch("/api/user/verify-reg", {

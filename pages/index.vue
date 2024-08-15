@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import {ref, onMounted, onUnmounted} from 'vue';
 
+useHead({
+  title: 'grtsinry43的招新小网站(｡･ω･｡)ﾉ♡',
+})
+
 const words = ['大佬云集', '经验丰富', '活泼可爱'];
 const currentWord = ref('');
 let wordIndex = 0;
@@ -38,7 +42,7 @@ onUnmounted(() => {
     <div class="desc">这里是 <span class="word">{{ currentWord }}</span> 的信息技术中心</div>
     <div class="action-container flex justify-center">
       <UButton class="mr-6" to="/task1">开始叭 ( •̀ ω •́ )✧</UButton>
-      <UButton color="white">了解我们</UButton>
+      <UButton color="white" to="https://wlbzx.grtsinry43.com/%E7%BD%91%E7%BB%9C%E9%83%A8%E6%8B%9B%E6%96%B0%E5%B0%8F%E4%BD%9C%E4%B8%9A.md">查看完整招新作业~</UButton>
     </div>
   </div>
 </template>
